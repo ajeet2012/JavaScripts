@@ -26,7 +26,7 @@ let result = arr.reduce((prev, current)=>{
     return prev + current;
 });
 
-console.log(result);
+console.log(result); // 34
 
 // Find the largest number in array --
 
@@ -36,6 +36,20 @@ return prev > current ? prev : current
 
 console.log(`Largest number in array ${largestNumber}`);
 
+
+// find --- find() returns the first element that satisfies a condition.
+
+let numberGreaterThan20 = arr.find((element)=>{
+return element > 20;
+});
+console.log(`${numberGreaterThan20}`); // 23
+
+// some - some() checks whether at least one element satisfies a condition.
+
+let anyNumberGreaterThan20 =  arr.some((element)=>{
+return element > 20;
+});
+console.log(`${anyNumberGreaterThan20}`); // true
 /*
 
 Take a number n as input from user. Create an array of numbers from 1 to n.
