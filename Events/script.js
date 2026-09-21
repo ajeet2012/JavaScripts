@@ -39,3 +39,32 @@ console.log("Handle third Event Listner");
 }
 btn2.addEventListener("click",handler3);
 btn2.removeEventListener("click", handler3);
+
+/*
+
+Problem 1 - Create a toggle button that changes the screen to dark mode
+when clicked and light mode with clicked again.
+
+*/
+
+let currentMode = "light";
+let body = document.querySelector("body");
+
+let handleThemeEvent = (event) => {
+    
+if (currentMode == "light") {
+   console.log(currentMode);
+    currentMode = "dark";
+   body.classList.add("dark");
+   body.classList.remove("light");
+}
+else {
+    console.log(currentMode);
+   currentMode = "light";
+   body.classList.add("light");
+   body.classList.remove("dark");
+}
+}
+ 
+let btnTheme = document.querySelector("#btnMode");
+btnTheme.addEventListener("click", handleThemeEvent);
