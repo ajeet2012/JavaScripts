@@ -33,3 +33,30 @@ class Son extends Parent {
 }
 
 let objSon = new Son();
+
+// super keyword use
+
+class Person {
+    constructor() {
+        this.spices = "HOME SPICES";
+    }
+
+    eat(){
+        console.log("Eat");
+    }
+}
+
+class Engineer extends Person {
+
+    constructor(branch){
+        super();
+        this.branch = branch;
+    }
+
+    work() {
+        console.log("Working");
+    }
+}
+
+let engObj = new Engineer("Chemical Engg");
+
