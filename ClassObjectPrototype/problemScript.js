@@ -1,4 +1,4 @@
-/* You are creating a website for your college.
+/* Problem 1 - You are creating a website for your college.
   Create a class User with 2 properties name and email. 
   It also has a method viewData() that allows user to 
   view website data */
@@ -16,7 +16,7 @@
   let user1 = new User("ajeet", "aj123@gmail.com");
   user1.viewData();
 
-  /*
+  /* Problem 2 -
   Class a new class Admin which inherits from User class.
    Add a new method called 'editData()' to admin that allows it
    to edit website data.
@@ -34,3 +34,20 @@
    userAdmin1.editData();
    userAdmin1.viewData(); // Name - amit, Email - sharma@gmail.com
   
+
+    try {
+
+    let result = 10 / a;
+
+    console.log(result);
+
+} catch (error) {
+
+    console.log("Something went wrong");
+    console.log(error.name);
+    console.log(error.message);
+    console.log(error.stack);
+
+}
+
+console.log("Operation Completed with error handling")
