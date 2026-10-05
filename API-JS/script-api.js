@@ -14,7 +14,7 @@ const getFactsAsyncAwait = async() => {
     factPara.innerText =  `AsyncAwait - ${data[0].country}`;
 };
 
-const getFactsPromise = async() => {
+const getFactsPromise = async() => { 
     fetch(url)
     .then((response)=>{
         return response.json();

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <div class="container"> 
+         <h2>Currency Converter</h2>
+         <form>
+            <div class="amount">
+                 <p>Enter Amount</p> 
+                 <input value="10" type="text"/> 
+            </div>
+            <div class="dropdown">
+             <div class="from">
+                <p>From</p>
+                <div class="self-container">
+                  <img src="https://flagsapi.com/US/flat/64.png"/>   
+                  <select name="from">
+                    <option>USD</option>
+                    <option>INR</option>
+                    <option>AED</option>
+                    <option>EUR</option>
+                  </select>
+                </div>
+             </div>
+             <i class="fa-solid fa-arrow-right-arrow-left"></i>
+             <div class="to"> </div>
+              <p>To</p>
+              <div class="self-container">
+                  <img src="https://flagsapi.com/IN/flat/64.png"/>   
+                    <select name="from">
+                      <option>USD</option>
+                      <option selected>INR</option>
+                      <option>AED</option>
+                      <option>EUR</option>
+                    </select>
+                </div>
+            </div>
+           <div class="msg">1 USD = 96 INR </div> 
+           <button >Get Exchange rate</button>
+         </form>
+    </div>
+ 
+<script src="script.js"></script>    
+</body>
+</html>
